@@ -16,8 +16,8 @@ public class DemoATT {
 
             //2 hàm để maximize/ minimize cửa sổ trình duyệt
             driver.manage().window().maximize(); //mục đích chọn maximize là để chứa thanh taskbar phía trên ( có theer thấy được URL), chứa thanh taskbar phía dưới ( có thể kiểm soát bật được browser chưa...)
-            driver.manage().window().fullscreen(); // tương đương F11
-            driver.manage().window().minimize();
+            //driver.manage().window().fullscreen(); // tương đương F11
+            //driver.manage().window().minimize();
 
             //mở website
             driver.navigate().to("https://crm.anhtester.com/admin/authentication");

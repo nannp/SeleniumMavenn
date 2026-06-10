@@ -1,4 +1,4 @@
-package nannp.test;
+package nannp.demo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,6 +21,9 @@ public class DemoATT {
 
             //mở website
             driver.navigate().to("https://crm.anhtester.com/admin/authentication");
+            //driver.navigate().to("https://cms.anhtester.com/login");
+            //driver.navigate().to("https://rise.anhtester.com/signin");
+
             driver.findElement(By.xpath("//input[@id='email']")).sendKeys("admin@example.com");
 
 //        String labelEmail = driver.findElement(By.xpath("//label[normalize-space()='Email Address']")).getText();

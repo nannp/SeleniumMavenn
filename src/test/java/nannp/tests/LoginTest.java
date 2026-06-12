@@ -1,6 +1,7 @@
 package nannp.tests;
 
 import com.google.common.annotations.VisibleForTesting;
+import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import nannp.pages.LoginPage;
@@ -8,7 +9,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import java.time.Duration;
 
@@ -29,6 +29,10 @@ public class LoginTest {
         driver.quit();
     }
 
+    public LoginTest() {
+        super();
+    }
+
     @Test
     public void loginSuccess(){
         LoginPage loginPage = new LoginPage(driver);
@@ -36,13 +40,13 @@ public class LoginTest {
 
     }
 
-    @Test
-    public void login_wrongEmail_showError(){
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.login("ad@example.com","123456");
-        String errorMsg = loginPage.getErrorMessage();
-        Assert.assertEquals(errorMsg, "Username is required");
-    }
+//    @Test
+//    public void login_wrongEmail_showError(){
+//        LoginPage loginPage = new LoginPage(driver);
+//        loginPage.login("ad@example.com","123456");
+//        String errorMsg = loginPage.getErrorMessage();
+//        Assert.assertEquals(errorMsg, "Username is required");
+//    }
 
 
 

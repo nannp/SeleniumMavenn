@@ -41,22 +41,7 @@ public class LoginPage {
         clickLogin();
     }
 
-    public
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public LoginPage() {
+        super();
+    }
 }
